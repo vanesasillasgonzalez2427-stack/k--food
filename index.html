@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k-food - Restaurante</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Colores nuevos y únicos */
+        :root {
+            --roble-oscuro: #000000;
+            --verde-oliva: #f5f5f5;
+            --crema: #fbbfff;
+            --rojo-terroso: #020202;
+            --negro-suave: #000000;
+        }
+
+        body {
+            color: var(--negro-suave);
+            line-height: 1.5;
+            background-color: var(--crema);
+        }
+
+        /* Encabezado */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1555529669-694a3c241d6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: var(--crema);
+            text-align: center;
+            padding: 3.5rem 2rem;
+        }
+
+        header h1 {
+            color: var(--rojo-terroso);
+            font-size: 2.3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        /* Sección de platos destacados */
+        .destacados {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .destacados h2 {
+            color: var(--roble-oscuro);
+            margin-bottom: 1.5rem;
+            font-size: 1.7rem;
+            border-bottom: 2px solid var(--verde-oliva);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .platos {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .plato {
+            width: 240px;
+            background-color: var(--blanco);
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .plato:hover {
+            transform: translateY(-5px);
+        }
+
+        .plato img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .plato h3 {
+            color: var(--rojo-terroso);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Sección de ambiente */
+        .ambiente {
+            padding: 2rem;
+            text-align: center;
+            background-color: var(--verde-oliva);
+            color: var(--crema);
+        }
+
+        .ambiente h2 {
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+
+        .ambiente img {
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+        /* Sección de contacto */
+        .contacto {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contacto h2 {
+            color: var(--roble-oscuro);
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: var(--roble-oscuro);
+            color: var(--crema);
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con imagen real de entrada de restaurante -->
+    <header>
+        <h1>k-food</h1>
+        <p>restaurante coreano</p>
+    </header>
+
+    <!-- Platos destacados con imágenes reales de cocina -->
+    <section class="destacados">
+        <h2>Platillos principales</h2>
+        <div class="platos">
+            <div class="plato">
+                <img src="https://www.sasa.co.id/medias/page_medias/Screen_Shot_2021-10-21_at_13_04_01.png" alt="kimchi">
+                <h3>kimchi</h3>
+            </div>
+            <div class="plato">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.kFkdt0gOTsEYKVeLqPRAIgHaHa?pid=Api&P=0&h=180" alt="Tteokbokki">
+                <h3>Tteokbokki</h3>
+            </div>
+            <div class="plato">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.0m1SMgkFlfybx-BHPBZMCgHaE8?pid=Api&P=0&h=180" alt="mandu">
+                <h3>mandu</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de ambiente con imagen real de sala de restaurante -->
+    <section class="ambiente">
+        <h2>Nuestro Ambiente Acogedor</h2>
+        <img src="https://img.freepik.com/fotos-premium/ondeando-bandera-corea-sur-fondo-cielo_832479-7389.jpg" alt="bandera representante del pais">
+    </section>
+
+    <!-- Contacto con datos 100% ficticios -->
+    <section class="contacto">
+        <h2>Visítanos</h2>
+        <p>Calle N° 456, Col. - Juárez, Chihuahua</p>
+        <p>Horario: Lun-Sáb 13:00-22:30 | Dom 12:00-21:00</p>
+        <p>Teléfono: +52 (656) 123-45-67</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; k-food - Restaurante coreano</p>
+    </footer>
+</body>
+</html>
